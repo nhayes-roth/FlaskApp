@@ -15,9 +15,14 @@ def about():
 	return "About"
 
 # user profile pages
-@app.route('/users/<user_name>')
+@app.route('/users/<user_name>/')
 def profile(user_name):
 	return "%s's profile" % user_name
+
+# micropost urls
+@app.route('/users/<user_name>/<int:post_id>/')
+def micropost(user_name, post_id):
+	return "User: %s Post: %d" % (user_name, post_id)
 
 
 # hello world page

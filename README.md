@@ -1,2 +1,3 @@
 FlaskApp
 ========
+FlaskApp is a simple microblogging application developed in conjunction with the Flask-docs. FlaskApp will allow a single user to sign in and out with credentials specified in the configuration. The user will be able to add new entries consisting of a text-only title and some html for the content. All entries will be displayed in reverse chronological order (newest at the top; oldest at the bottem).
